@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let number = prompt('Enter a number: '),
+        multSum = prompt('Enter + or x');
+    let sum = 1;
+    if(multSum === "x"){
+    number= parseInt(number);
+    for (let i = 2; i <= number; i++) {
+        sum *= i;
+    }
+    alert(`This is the result: ${sum}`)
+    }else if(multSum === "+"){
+    number= parseInt(number);
+    for (let i = 2; i <= number; i++) {
+        sum += i;
+    }
+    alert(`This is the result: ${sum}`)
+    }else{alert(`This not a number`)}
+    </script>
+</body>
+</html>
